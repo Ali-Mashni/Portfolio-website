@@ -13,7 +13,10 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <!---Custom CSS-->
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="../css\styles.css">
+
+    <!-- Devicon CSS (For technology icons) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
 </head>
 
 <body>
@@ -22,18 +25,18 @@
 
         <nav class="navbar navbar-expand-lg navbar-light shadow bg-dark ">
             <div class="container-fluid">
-                <a href="index.html" class="navbar-brand text-white">
-                    <span class="material-icons-outlined text-white">home</span>
-                    Ali
+                <a href="index.html" class="navbar-brand text-white d-flex align-items-center">
+                    <span class="material-icons-outlined me-2 fs-1">home</span>
+                    <span class="fw-bold fs-4">Ali</span>
                 </a>
-                <button type="button" class="navbar-toggler" data-bs-toggle="collapse"
+                <button type="button" class="navbar-toggler bg-white" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
+                    <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0 fs-4">
                         <li class="nav-item">
                             <a href="#about" class="nav-link me-lg-3 text-white ">About</a>
                         </li>
@@ -128,7 +131,8 @@
                             <div class="bg-secondary text-white text-center p-4 rounded">
                                 <span class="material-icons-outlined">security</span>
                                 <h5>Cybersecurity</h5>
-                                <p>I implement security best practices to protect applications from vulnerabilities, ensuring safe and reliable software.</p>
+                                <p>I implement security best practices to protect applications from vulnerabilities,
+                                    ensuring safe and reliable software.</p>
                             </div>
                         </div>
                     </div>
@@ -139,6 +143,99 @@
 
             <!--Projects-->
             <!--End Projects-->
+
+            <!--Skills-->
+            <section id="skills" class="text-center py-5">
+                <div class="container">
+                    <h2 class="fw-bold mb-4">
+                        <span class="material-icons-outlined text-dark">bar_chart</span> Skills
+                    </h2>
+
+                    <!-- Skill Filters -->
+                    <div class="filters mb-4">
+                        <button class="btn btn-outline-dark filter-btn" data-filter="all">All</button>
+                        <button class="btn btn-outline-dark filter-btn" data-filter="programming-language">Programming Languages</button>
+                        <button class="btn btn-outline-dark filter-btn" data-filter="tool">Tools</button>
+                        <button class="btn btn-outline-dark filter-btn" data-filter="language">Languages</button>
+                        <button class="btn btn-outline-dark filter-btn" data-filter="database">Databases</button>
+                        <button class="btn btn-outline-dark filter-btn" data-filter="framework">Frameworks</button>
+                        <button class="btn btn-outline-dark filter-btn" data-filter="security">Security</button>
+                    </div>
+
+                    <!-- Skills Cloud -->
+                    <div class="skills-cloud">
+                        <!-- Programming Languages -->
+                        <span class="skill-item programming-language skill-lg">
+                            <i class="devicon-python-plain colored"></i> Python
+                        </span>
+                        <span class="skill-item programming-language skill-md">
+                            <i class="devicon-java-plain colored"></i> Java
+                        </span>
+                        <span class="skill-item programming-language skill-sm">
+                            <i class="devicon-c-plain colored"></i> C
+                        </span>
+                        <span class="skill-item programming-language skill-md">
+                            <i class="devicon-cplusplus-plain colored"></i> C++
+                        </span>
+                        <span class="skill-item programming-language skill-sm">Assembly</span>
+
+                        <!-- Tools -->
+                        <span class="skill-item tool security skill-lg">Lucidchart
+                        </span>
+                        <span class="skill-item tool security skill-md">
+                            <img src="../images/BurpSuite.jpeg" alt="BurpSuite Icon" class="icon-small"> Burp Suite
+                        </span>
+                        <span class="skill-item tool skill-sm">
+                            <i class="fas fa-shield-alt"></i> OWASP ZAP
+                        </span>
+
+                        <!-- Databases -->
+                        <span class="skill-item database skill-lg">
+                            <i class="devicon-mysql-plain colored"></i> MySQL
+                        </span>
+                        <span class="skill-item database skill-md">
+                            <i class="devicon-microsoftsqlserver-plain colored"></i> Microsoft SQL Server
+                        </span>
+                        <span class="skill-item database skill-sm">
+                            <i class="devicon-postgresql-plain colored"></i> PostgreSQL
+                        </span>
+
+                        <!-- Frameworks -->
+                        <span class="skill-item framework skill-lg">
+                            <i class="devicon-react-original colored"></i> React
+                        </span>
+                        <span class="skill-item framework skill-md">
+                            <i class="devicon-nodejs-plain colored"></i> Node.js
+                        </span>
+
+                        <!-- Security -->
+                        
+
+                        <!-- Languages -->
+                        <span class="skill-item language skill-lg">🇬🇧 English</span>
+                        <span class="skill-item language skill-md">🇸🇦 Arabic</span>
+
+                        <!-- Other Skills -->
+                        <span class="skill-item skill-lg">
+                            <i class="fas fa-file-word"></i> Microsoft Office
+                        </span>
+                        <span class="skill-item skill-md">
+                            <i class="devicon-javascript-plain colored"></i> JavaScript
+                        </span>
+                        <span class="skill-item skill-sm">
+                            <i class="devicon-css3-plain colored"></i> CSS
+                        </span>
+                        <span class="skill-item skill-lg">
+                            <i class="fas fa-pen-nib"></i> Technical Writing
+                        </span>
+                        <span class="skill-item skill-lg">
+                            <i class="fas fa-terminal"></i> Secure Shell (SSH)
+                        </span>
+                    </div>
+
+                </div>
+            </section>
+            <!--End Skills-->
         </main>
     </div>
 
@@ -149,7 +246,7 @@
         crossorigin="anonymous"></script>
 
     <!--script-->
-    <script src="js/scrpits.js"></script>
+    <script src="../js/scrpits.js"></script>
 </body>
 
 </html>
